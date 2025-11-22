@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: b2-proxy
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
